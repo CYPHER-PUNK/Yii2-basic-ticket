@@ -14,7 +14,7 @@ use yii\web\IdentityInterface;
  */
 class User extends \yii\db\ActiveRecord implements IdentityInterface
 {
-    public $rememberMe;
+    #public $rememberMe;
 
     /**
      * @inheritdoc
@@ -58,7 +58,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         return [
             [['email', 'auth_key'], 'string', 'max' => 255],
             [['email'], 'unique'],
-            [['rememberMe'], 'boolean']
+            #[['rememberMe'], 'boolean']
         ];
     }
 
