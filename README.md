@@ -16,13 +16,13 @@ DIRECTORY STRUCTURE
       config/             contains application configurations
       controllers/        contains Web controller classes
       mail/               contains view files for e-mails
+      migrations/         contains DB migrations
       models/             contains model classes
       runtime/            contains files generated during runtime
       tests/              contains various tests for the basic application
       vendor/             contains dependent 3rd-party packages
       views/              contains view files for the Web application
       web/                contains the entry script and Web resources
-
 
 
 REQUIREMENTS
@@ -36,14 +36,14 @@ INSTALLATION
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
 php composer.phar install
-yii migrate/up
+yii migrate/up --interactive=0
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/basic/web/
+http://localhost/
 ~~~
 
 
