@@ -36,6 +36,7 @@ INSTALLATION
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
 php composer.phar install
+yii migrate/up
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
